@@ -1,0 +1,23 @@
+.b-all{ border:1px solid rgb(218,216,216);}
+.b-t{ border-top: 1px solid rgb(218,216,216);}
+.b-b{ border-bottom: 1px solid rgb(218,216,216);}
+
+
+
+.p-10{ padding:10px;}
+
+.flex{ display:flex;}
+
+.jc-c{ justify-content: center;}
+.sb{ justify-content: space-between;}
+
+.db{ display: block;}
+
+
+.m-t-10{ margin-top:10px;}
+
+.m-l-20{ margin-left: 20px;}
+
+.m-r-20{ margin-right: 20px;}
+
+.pointer{ cursor: pointer;}
