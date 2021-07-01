@@ -1,0 +1,80 @@
+.cart{
+	padding:20rpx;
+	width: 100%;
+}
+.goodtitle{
+	display: flex;
+	justify-content:space-between;
+	font-size: 14px;
+}
+.good{
+	display: flex;
+	padding:10rpx;
+	margin-top: 10rpx;
+	background-color: #fff;
+	border-radius: 10rpx;
+}
+.good image{
+	width: 200rpx;
+	height: 200rpx;
+	margin-left: 20rpx;
+	flex-shrink: 0;
+}
+.good checkbox{
+	line-height: 200rpx;
+}
+.good .info{
+	margin-left:20rpx;
+	width: 100%;
+}
+.good .buy{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20rpx;
+}
+.good .buy .num{
+	display: flex;
+}
+.good .buy .num input{
+	width: 80rpx;
+	outline: 1rpx solid #4CD964;
+	text-align: center;
+}
+.good .buy .num .icon{
+	width: 40rpx;
+	height: 40rpx;
+	background: #4CD964;
+	border-radius: 50%;
+	line-height: 35rpx;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	margin:0 10rpx;
+}
+.calc{
+	display: flex;
+    justify-content: space-between;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background-color: #fff;
+	border-radius: 5rpx;
+	width: 100%;
+	height: 100rpx;
+	padding:0 20rpx;
+}
+.calc checkbox{
+	line-height: 100rpx;
+}
+.calc .btn{
+	width: 120rpx;
+	height: 60rpx;
+	text-align: center;
+	line-height: 60rpx;
+	background-color: #4CD964;
+	color: #fff;
+	margin-left: 20rpx;
+	border-radius: 30rpx;
+	margin-top:20rpx;
+}

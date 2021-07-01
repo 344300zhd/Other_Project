@@ -1,0 +1,1 @@
+<view class="page"><swiper class="carousel" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" duration="{{1000}}"><swiper-item><image class="carousel" src="../../static/carousel/batmanvssuperman.png"></image></swiper-item><swiper-item><image class="carousel" src="../../static/carousel/spiderman.png"></image></swiper-item></swiper></view>

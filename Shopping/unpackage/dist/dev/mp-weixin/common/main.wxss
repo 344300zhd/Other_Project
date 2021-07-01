@@ -1,0 +1,25 @@
+.w100{ width: 100%;}
+.hide2{
+	display: -webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:2;
+	overflow: hidden;
+}
+.f-12{ font-size: 12px;}
+.f-14{ font-size: 14px;}
+.bold{font-weight: bold;}
+.c-8080{color: #808080;}
+.c-4cd9{color: #4CD964;}
+.c-red{color: red;}
+.flex{display: -webkit-box;display: -webkit-flex;display: flex;}
+.m-t-10{margin-top:10rpx}
+/*每个页面公共css */
+page,page{
+	background-color: #F1F1F1;
+	width: 100%;
+}
+view{
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
