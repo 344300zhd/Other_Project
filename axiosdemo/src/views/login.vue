@@ -37,6 +37,7 @@
 import qs from "qs"
 import request from "../utils/request"
 import user from "../api/user"
+import {mapMutations,mapState} from "vuex"
 export default {
     data(){
       return{
@@ -51,7 +52,11 @@ export default {
         loading:false
       }
     },
+    computed:{
+      ...mapState(['token'])
+    },
     methods:{
+      ...mapMutations(['save_token']),
       doLogin(type){
         this.loading = true
         switch(type){
@@ -93,7 +98,8 @@ export default {
           case 4: //深度封装
             user.login({username:this.login.username,password:this.login.password}).then(resp=>{
                if(resp.data.success == true){
-                localStorage.setItem('token',new Date().getTime())
+                this.save_token({token:String(new Date())})
+                console.log("用户token:",this.token)
                 this.$message.success("使用深度封装方法：登录成功！")
                 this.loading = false
                 this.$router.push("/home")

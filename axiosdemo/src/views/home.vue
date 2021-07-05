@@ -28,6 +28,7 @@
 
 <script>
 import user from "../api/user"
+import {mapMutations, mapState} from "vuex"
 export default {
     data(){
       return{
@@ -36,6 +37,7 @@ export default {
       }
     },
     methods:{
+      ...mapMutations(['clear_token']),
       getShi(){
         user.getShi().then(resp=>{this.shi = resp.data})
       },
@@ -47,7 +49,7 @@ export default {
         this.$axios.all([this.getSong(),this.getShi()])
       },
       loginout(){
-        localStorage.removeItem('token')
+        this.clear_token()
         this.$router.push({name:'login'})
         console.log("缓存:",localStorage.getItem("token"));
       }
