@@ -2,7 +2,7 @@
   <div class="all">
     <!-- 左侧导航栏 -->
     <div class="menu">
-      <el-menu router :default-openeds="['1','2']">
+      <el-menu router :default-openeds="['4']">
       <el-menu-item index="welcome">
         <i class="el-icon-s-unfold"></i>
         <span>首页</span>
@@ -46,7 +46,39 @@
           <i class="el-icon-zoom-in"></i>
           <span>jQuery--图片查看器</span>
         </el-menu-item>
-        
+      </el-submenu>
+      <el-submenu index="3">
+        <template slot="title">
+          <i class="el-icon-s-grid"></i>
+          <span>Vue基础学习</span>
+        </template>
+        <el-menu-item index="basic">
+          <i class="el-icon-edit-outline"></i>
+          <span>vue基础学习</span>
+        </el-menu-item>
+        <el-menu-item index="inputnumber">
+          <i class="el-icon-c-scale-to-original"></i>
+          <span>自定义计数器组件</span>
+        </el-menu-item>
+        <el-menu-item index="inputvmodel">
+          <i class="el-icon-c-scale-to-original"></i>
+          <span>v-model语法糖</span>
+        </el-menu-item>
+        <el-menu-item index="nextTick">
+          <i class="el-icon-c-scale-to-original"></i>
+          <span>vue全局api----nextTick()</span>
+        </el-menu-item>
+      </el-submenu>
+      <el-submenu index="4">
+       <template slot="title">
+          <i class="el-icon-s-tools"></i>
+        <span>Elementui</span>
+
+       </template>
+        <el-menu-item index="elembasic">
+          <i class="el-icon-s-tools"></i>
+          <span>Elementui--基本使用</span>
+        </el-menu-item>
       </el-submenu>
     </el-menu>
     </div>

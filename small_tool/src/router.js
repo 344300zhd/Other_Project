@@ -54,6 +54,31 @@ export default new Router({
           path:'ajax',
           name:'ajax',
           component:()=>import("@/views/js/ajax")
+        },
+        {
+          path:'basic',
+          name:"basic",
+          component:()=>import("@/views/vue/basic")
+        },
+        {
+          path:"inputnumber",
+          name:"inputnumber",
+          component:()=>import("@/views/vue/inputnumber")
+        },
+        {
+          path:'inputvmodel',
+          name:"inputvmodel",
+          component:()=>import("@/views/vue/inputvmodel")
+        },
+        {
+          path:'nextTick',
+          name:"nextTick",
+          component:()=>import("@/views/vue/nextTick")
+        },
+        {
+          path:'elembasic',
+          name:"elembasic",
+          component:()=>import("@/views/elementui/elembasic")
         }
       ]
     }
