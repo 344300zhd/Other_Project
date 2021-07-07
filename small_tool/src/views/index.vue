@@ -2,7 +2,7 @@
   <div class="all">
     <!-- 左侧导航栏 -->
     <div class="menu">
-      <el-menu router :default-openeds="['4']">
+      <el-menu router>
       <el-menu-item index="welcome">
         <i class="el-icon-s-unfold"></i>
         <span>首页</span>
@@ -78,6 +78,17 @@
         <el-menu-item index="elembasic">
           <i class="el-icon-s-tools"></i>
           <span>Elementui--基本使用</span>
+        </el-menu-item>
+      </el-submenu>
+      <el-submenu index="5">
+        <template slot="title">
+          <i class="el-icon-c-scale-to-original"></i>
+          <span>ECharts</span>
+        </template>
+
+        <el-menu-item index="echarts">
+          <i class="el-icon-c-scale-to-original"></i>
+          <span>ECharts----简单使用</span>
         </el-menu-item>
       </el-submenu>
     </el-menu>

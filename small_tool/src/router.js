@@ -79,6 +79,11 @@ export default new Router({
           path:'elembasic',
           name:"elembasic",
           component:()=>import("@/views/elementui/elembasic")
+        },
+        {
+          path:"echarts",
+          name:"echarts",
+          component:()=>import("@/views/echarts/echarts")
         }
       ]
     }
