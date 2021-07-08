@@ -1,0 +1,52 @@
+.container{
+	padding: 20rpx;
+}
+.xscroll-container{
+	height: 300rpx;
+	background-color: #fff;
+	overflow: hidden;
+	white-space: nowrap;
+	padding: 20rpx;
+}
+.xscroll-item{
+	display: inline-block;
+	width: 200rpx;
+	height: 100%;
+	margin:0 15rpx;
+}
+.title{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	color: #808080;
+	font-size: 14px;
+	background-color:#fff;
+	padding:20rpx 20rpx 0rpx 20rpx;
+}
+.yscroll-container{
+	width: 48%;
+	margin-top: 20rpx;
+	background-color: #FFFFFF;
+	height: 600rpx;
+	padding: 20rpx;
+}
+.yscroll-item{
+	width: 100%;
+	margin-bottom: 10rpx;
+}
+.xswiper{
+	width: 100%;
+	height: 300rpx;
+	background-color: #fff;
+	margin-top: 20rpx;
+}
+.yswiper{
+	width: 48%;
+	height: 300rpx;
+	background-color: #fff;
+	margin-top: 20rpx;
+}
+

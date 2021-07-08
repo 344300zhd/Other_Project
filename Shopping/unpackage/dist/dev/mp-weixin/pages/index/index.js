@@ -148,13 +148,118 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-var _default =
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+// 获取全局数据
+var app = getApp().globalData;var _default =
 {
   data: function data() {
-    return {};
+    return {
+      msg: "",
+      timeoutId: '',
+      canstart: true,
+      intervalid: '',
+      endtime: 10, //倒计时,
+      area: ['广州', '深圳', '东莞', '厦门', '杭州'],
+      index: 0,
+      date: "1999-01-12",
+      time: '00:00',
+      current: {
+        poster: 'https://bjetxgzv.cdn.bspapp.com/VKCEYUGU-uni-app-doc/7fbf26a0-4f4a-11eb-b680-7980c8a877b8.png',
+        name: '致爱丽丝',
+        author: '暂无',
+        src: 'https://bjetxgzv.cdn.bspapp.com/VKCEYUGU-hello-uniapp/2cc220e0-c27a-11ea-9dfb-6da8e309e0d8.mp3' },
+
+      audioAction: {
+        method: 'pause' },
+
+      id: 0, // 使用 marker点击事件 需要填写id
+      title: 'map',
+      latitude: 39.909,
+      longitude: 116.39742,
+      covers: [{
+        latitude: 39.909,
+        longitude: 116.39742,
+        iconPath: '../../../static/location.png' },
+      {
+        latitude: 39.90,
+        longitude: 116.39,
+        iconPath: '../../../static/location.png' }] };
+
 
   },
   onLoad: function onLoad() {
+    console.log("全局数据:", app.msg);
     uni.request({
       url: "https://www.imovietrailer.com/superhero/index/carousel/list",
       method: "post",
@@ -163,7 +268,44 @@ var _default =
       } });
 
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    pick_area: function pick_area(e) {
+      this.index = e.target.value;
+    },
+
+    pick_date: function pick_date(e) {
+      this.date = e.target.value;
+      console.log(e);
+    },
+
+    pick_time: function pick_time(e) {
+      this.time = e.target.value;
+    },
+
+    start: function start() {var _this = this;
+      this.canstart = false;
+      this.endstart();
+      this.timeoutId = setTimeout(function () {
+        _this.msg = "炸弹爆炸";
+      }, 10000);
+    },
+
+    stop: function stop() {
+      this.canstart = true;
+      clearTimeout(this.timeoutId);
+      clearInterval(this.intervalid);
+      this.msg = "炸弹拆除";
+    },
+
+    endstart: function endstart() {var _this2 = this;
+      this.endtime == 0 ? this.endtime = 10 : this.emdtime = 0;
+      this.intervalid = setInterval(function () {
+        _this2.endtime -= 1;
+        if (_this2.endtime == 0) {
+          clearInterval(_this2.intervalid);
+        }
+      }, 1000);
+    } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),

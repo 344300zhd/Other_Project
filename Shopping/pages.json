@@ -8,6 +8,15 @@
 			}
 		},
 		{
+		    "path" : "pages/user/user",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
 		    "path" : "pages/search/search",
 		    "style" :                                                                                    
 		    {
@@ -15,16 +24,8 @@
 		        "enablePullDownRefresh": false
 		    }
 		    
-		},	
-        {
-            "path" : "pages/user/user",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
+		}
+        
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

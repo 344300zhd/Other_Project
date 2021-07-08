@@ -13,6 +13,10 @@
 .c-red{color: red;}
 .flex{display: -webkit-box;display: -webkit-flex;display: flex;}
 .m-t-10{margin-top:10rpx}
+scroll-view,view{
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
 /*每个页面公共css */
 page,page{
 	background-color: #F1F1F1;

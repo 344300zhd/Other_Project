@@ -1,5 +1,8 @@
 <script>
 	export default {
+		globalData:{
+			msg:"全局数据"
+		},
 		onLaunch: function() {
 			console.log('App Launch')
 		},
