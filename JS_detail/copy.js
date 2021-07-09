@@ -14,7 +14,7 @@
  let s2 = s
  s = 2
  console.log(s2);
-
+ 
  //Object.assgin():浅拷贝
  let obj1 = {name:"zhd",age:22}
  let obj2 = Object.assign({},obj1)
