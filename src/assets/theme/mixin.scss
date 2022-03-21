@@ -1,0 +1,12 @@
+@charset 'utf-8';
+@import './_theme.scss';
+
+@mixin theme($color) {
+    background-color: $color !important;
+    [data-theme = "light"] & {
+        background-color: $theme-light !important; 
+    }
+    [data-theme = "dark"] & {
+        background-color: $theme-dark !important;
+    }
+}
