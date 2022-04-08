@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue 源码解读</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script>
+        let image = new Image()
+        image.onload = function(res){
+            image.src = "http://www.baidu.com"
+            console.log("res =>",res);
+        }
+    </script>
+</body>
+</html>

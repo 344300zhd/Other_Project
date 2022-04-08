@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本截断</title>
+
+    <style>
+        .box{
+            width: 200px;
+            border: 1px solid pink;
+            margin-bottom: 10px;
+        }
+        /* 第一种：通用单行文本截断 */
+        .one{
+            display: inline-block;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        /* 第二种：webkit 专用文本截断 */
+        .one-copy{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+        /* 第一种：多行文本截断,按行数截断 */
+        .more{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="box one"></div>
+    <div class="box one-copy"></div>
+    <div class="box more"></div>
+
+    <script>
+        window.onload = function(){
+            const text = "this is some text.this is some text." +
+                         "this is some text.this is some text." +
+                         "this is some text.this is some text." +
+                         "this is some text.this is some text." +
+                         "this is some text.this is some text."
+            let elemList = document.getElementsByClassName("box")
+            for(let i = 0;i<elemList.length;i++){
+                elemList[i].innerText = text
+            }
+        }
+    </script>
+</body>
+</html>
